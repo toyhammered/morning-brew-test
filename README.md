@@ -7,7 +7,7 @@
 
 # Additional Notes:
   TODO:
-  
+
     1. Add testing
     2. Add documentation
     3. TinyMce Pro (key seems to not be premium enabled, would normally contact support)
@@ -17,12 +17,7 @@
     7. Add actual ux/ui (currently just crud with basic styles, will go more into in the additional features section).
     8. Inline support for when posting to Lyra
 
-<<<<<<< Updated upstream
-  Features:
-  
-=======
   Devleoped Features:
->>>>>>> Stashed changes
     1. Most CRUD actions linked up to MorningBrewLyra site
     2. View all Stories and Newsletters
     2. Ability to preview story live (with template provided)
