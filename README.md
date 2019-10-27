@@ -7,6 +7,7 @@
 
 # Additional Notes:
   TODO:
+  
     1. Add testing
     2. Add documentation
     3. TinyMce Pro (key seems to not be premium enabled, would normally contact support)
@@ -17,6 +18,7 @@
     8. Inline support for when posting to Lyra
 
   Features:
+  
     1. Most CRUD actions linked up to MorningBrewLyra site
     2. View all Stories and Newsletters
     2. Ability to preview story live (with template provided)
