@@ -17,10 +17,23 @@
     7. Add actual ux/ui (currently just crud with basic styles, will go more into in the additional features section).
     8. Inline support for when posting to Lyra
 
+<<<<<<< Updated upstream
   Features:
   
+=======
+  Devleoped Features:
+>>>>>>> Stashed changes
     1. Most CRUD actions linked up to MorningBrewLyra site
     2. View all Stories and Newsletters
     2. Ability to preview story live (with template provided)
     3. Utilize TinyMCE
     4. Newsletters have many stories (correct nesting)
+
+  Future Features:
+    The big feature would be the flow of this site. I would like the main page to be an SPA (and a couple of erb pages for less important). We would have all the newsletters ordered by date (newest at top) and then a dropdown which would show all related stories. You would be able to modify a newsletter inline. If you clicked on a story, this would be the same as the edit view (you would also just click on the input to edit, similar to newsletter)
+
+    As for the associations, I would most likely turn newsletters into a STI or Polymorphic, so we can have multiple types (i.e Main, Tech, Retail, etc...) and be able to share stories between each of them.
+
+    There should also be some type of review process related to a story/newsletter to make sure everything looks correct (maybe how Microsoft Word allows others to edit documents/leave notes).
+
+    Story collaboration (ability to have multiple authors who worked on a story together)
