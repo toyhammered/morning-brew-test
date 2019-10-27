@@ -1,0 +1,3 @@
+<%= render partial: 'preview', locals: { story: @story } %>
+<%= link_to 'Edit', edit_newsletter_story_path(@newsletter, @story), class: 'btn btn-primary' %>
+<%= link_to 'Back', newsletter_path(@newsletter), class: 'btn btn-light' %>

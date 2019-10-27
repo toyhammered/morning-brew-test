@@ -1,0 +1,36 @@
+<div>
+  <h1>All Newsletters</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="text-center" colspan="5">Newsletters</th>
+      </tr>
+      <tr class="text-center">
+        <th>Release Date</th>
+        <th>Title</th>
+        <th>Edit</th>
+        <th>Destroy</th>
+        <th>Publish</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @newsletters.each do |newsletter| %>
+        <tr class="text-center">
+          <td><%= newsletter.release_date %></td>
+          <td><%= link_to newsletter.title, newsletter %></td>
+          <td><%= link_to 'Edit', edit_newsletter_path(newsletter), class: 'btn btn-primary' %></td>
+          <td><%= link_to 'Destroy', newsletter, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
+          <% unless newsletter.published %>
+            <td><%= link_to 'Publish', publish_newsletter_path(newsletter), method: :post, class: 'btn btn-success' %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Newsletter', new_newsletter_path, class: 'btn btn-primary' %>

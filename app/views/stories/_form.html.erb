@@ -1,0 +1,36 @@
+<%= javascript_pack_tag 'tinymce_custom' %>
+
+<%= form_for [newsletter, story] do |form| %>
+  <% if story.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+        <% story.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.text_field :title, class: 'form-control', placeholder: :title, required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.text_field :tag, class: 'form-control', placeholder: :tag %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div class="form-group">
+    <%= render partial: 'preview', locals: { story: @story } %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit', class: 'btn btn-success' %>
+  </div>
+<% end %>

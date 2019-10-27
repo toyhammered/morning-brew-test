@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: morning_brew_development
+  pool: 5
+  username:
+  password:
